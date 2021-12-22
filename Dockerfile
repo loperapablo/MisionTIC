@@ -1,8 +1,8 @@
 FROM node:16
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /src/app
 
-WORKDIR /usr/src/app
+WORKDIR /src/app
 
 COPY package*.json ./
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
